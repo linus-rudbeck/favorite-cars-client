@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Cars Client</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+</head>
+<body>
+    <h1>Favorite Cars Client</h1>
+    
+    <hr>
+
+    <div id="register-login">
+        <h2>Register</h2>
+        <form id="register-form">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="register-username">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="register-password">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="register-confirmPassword">
+            <br>
+            <input type="submit" value="Register">
+        </form>
+    
+        <hr>
+    
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="login-username" value="linus">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="login-password" value="123456">
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    
+        <hr>
+    </div>
+
+    <div id="create-car" style="display: none;">
+        <h2>Create car</h2>
+
+        <form id="create-car-form">
+            <label for="make">Make</label>
+            <input type="text" name="make" id="create-car-make">
+            <br>
+            <label for="model">Model</label>
+            <input type="text" name="model" id="create-car-model">
+            <br>
+            <label for="year">Year</label>
+            <input type="text" name="year" id="create-car-year">
+            <br>
+            <input type="submit" value="Create">
+    </div>
+
+    <div id="cars" style="display: none;">
+        <h2>All cars</h2>
+        <ul id="cars-list"></ul>
+    </div>
+
+    <div id="car-likes" style="display: none;">
+        <h2>Car likes</h2>
+        <ul id="car-likes-list"></ul>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
